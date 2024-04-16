@@ -1,0 +1,53 @@
+@import "../common.scss";
+
+footer {
+  // tempriory mt added
+  margin-top: 50vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $bg;
+
+  p {
+    span {
+      text-decoration: underline;
+      color: $pink-dark;
+      cursor: pointer;
+    }
+  }
+
+  img {
+    width: 5rem;
+    height: auto;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+
+    a {
+      text-decoration: none;
+      color: $gray-dark;
+    }
+
+    a:hover {
+      color: $pink-dark;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 1rem;
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    img {
+      width: 8rem;
+    }
+  }
+}

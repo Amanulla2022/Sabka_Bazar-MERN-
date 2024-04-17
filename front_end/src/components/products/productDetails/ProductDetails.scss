@@ -1,0 +1,84 @@
+@import "../../../common//common.scss";
+
+.product-details {
+  margin-left: 22%;
+  width: calc(80% - 2rem);
+
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .product-card {
+    position: relative;
+    flex: 0 0 calc(33.333% - 1rem);
+    border: 1px solid $pink-light;
+    border-radius: 5px;
+    overflow: hidden;
+
+    .product-image-price {
+      display: flex;
+
+      img {
+        width: 50%;
+        height: auto;
+      }
+
+      .product-price {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 2rem;
+      }
+
+      .product-price p {
+        color: $gray-dark;
+      }
+
+      .product-price p .price {
+        color: $green;
+      }
+
+      .product-price p .stock {
+        color: $red;
+      }
+    }
+
+    .product-info {
+      padding: 1rem;
+
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        margin-bottom: 0.5rem;
+      }
+
+      p:last-child {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  .cart-button-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-details {
+    margin-left: 42%;
+    width: 70%;
+
+    .product-card {
+      flex: 0 0 calc(100% - 1rem);
+    }
+  }
+}

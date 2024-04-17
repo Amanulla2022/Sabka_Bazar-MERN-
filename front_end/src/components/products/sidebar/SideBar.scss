@@ -1,0 +1,28 @@
+@import "../../../common//common.scss";
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  background-color: $bg;
+  padding: 1.25rem;
+
+  p {
+    margin: 0;
+    padding: 0.625rem 0;
+    border-bottom: 1px solid $pink-light;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $pink-dark;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 40%;
+  }
+}

@@ -3,6 +3,7 @@ import categories from "../../../json/category";
 import "./Categories.scss";
 import "../../../common/common.scss";
 import { GoArrowRight } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 const Categories = () => {
   return (
@@ -13,10 +14,12 @@ const Categories = () => {
             <h1>{category.name}</h1>
             <img src={category.imageUrl} alt={category.name} />
             <p>{category.description}</p>
-            <button>
-              <span>Explore</span>
-              <GoArrowRight className="icons" />
-            </button>
+            <Link to={`/products`}>
+              <button>
+                <span>Explore</span>
+                <GoArrowRight className="icons" />
+              </button>
+            </Link>
           </div>
         );
       })}

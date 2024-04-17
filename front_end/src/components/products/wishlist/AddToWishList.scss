@@ -1,0 +1,27 @@
+@import "../../../common//common.scss";
+
+.wishlist-button-container {
+  position: relative;
+  cursor: pointer;
+
+  .wishlist-button {
+    color: $gray-dark;
+    height: 1.5rem;
+    width: 1.5rem;
+
+    &:hover {
+      color: $pink-dark;
+    }
+  }
+
+  .wishlist-item {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: block;
+    border: 1px solid $pink-dark;
+    background-color: $pink-light;
+    padding: 10px;
+    margin-top: 10px;
+  }
+}

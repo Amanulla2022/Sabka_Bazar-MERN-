@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Swanky+and+Moo+Moo&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
 // Colors
 $bg: #f5f5f5;
 
@@ -6,3 +12,9 @@ $pink-dark: #e75480;
 
 $gray-light: #cccccc;
 $gray-dark: #999999;
+
+h1 {
+  font-weight: 800;
+  font-size: x-large;
+  text-decoration: underline;
+}
